@@ -5,7 +5,7 @@ import type {
 	INodeTypeDescription,
 } from 'n8n-workflow';
 import { NodeConnectionType, NodeOperationError } from 'n8n-workflow';
-import { query, type SDKMessage } from '@anthropic-ai/claude-code';
+import { query, type SDKMessage } from '@anthropic-ai/claude-agent-sdk';
 
 export class ClaudeCode implements INodeType {
 	description: INodeTypeDescription = {
@@ -65,6 +65,11 @@ export class ClaudeCode implements INodeType {
 					{
 						name: 'Sonnet',
 						value: 'sonnet',
+						description: 'Fast and efficient model for most tasks',
+					},
+					{
+						name: 'Haiku',
+						value: 'haiku',
 						description: 'Fast and efficient model for most tasks',
 					},
 					{

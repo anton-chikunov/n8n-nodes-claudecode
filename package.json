@@ -48,9 +48,6 @@
       "dist/nodes/ClaudeCode/ClaudeCode.node.js"
     ]
   },
-  "dependencies": {
-    "@anthropic-ai/claude-code": "latest"
-  },
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/commit-analyzer": "^13.0.0",
@@ -59,9 +56,9 @@
     "@semantic-release/npm": "^12.0.1",
     "@semantic-release/release-notes-generator": "^14.0.1",
     "@types/node": "^22.13.10",
-    "conventional-changelog-conventionalcommits": "^8.0.0",
     "@typescript-eslint/parser": "~8.32.0",
     "commitizen": "^4.3.1",
+    "conventional-changelog-conventionalcommits": "^8.0.0",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.57.0",
     "eslint-plugin-n8n-nodes-base": "^1.16.3",
@@ -77,5 +74,8 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "dependencies": {
+    "@anthropic-ai/claude-agent-sdk": "latest"
   }
 }
